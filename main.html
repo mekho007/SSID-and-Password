@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+  background-image: url("https://theradiodoctor.com/wp-content/uploads/2015/07/Hi-Tech-Wallpaper-17-light-1024x640.jpg");
+}
+ 
+  .button {
+  background-color:#87CEEB;
+  border-radius:3px;
+  color: white;
+ padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+   font-color :#87CEEB ;
+   width : 120px ;
+  max-width: 100%;
+
+
+}
+
+
+
+  .h1 {
+font-family: "Times New Roman" , 'Times New Roman', Times, serif;
+color:#C71585 ;
+font-size:9vw ;
+text-align: center;
+  margin: 0px auto;
+  display: block;
+
+}
+ .h2 {
+font-family: "Times New Roman" , 'Times New Roman', Times, serif;
+color:dodgerblue ;
+font-size:6vw ;
+text-align: center;
+  margin: 0px auto;
+  display: block;
+
+}
+.h3{
+  font-family: "Times New Roman" , 'Times New Roman', Times, serif;
+  color:#1b17da ;
+font-size:4vw ;
+
+}
+.slidecontainer {
+  width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #C71585;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  
+  <h class="h1">
+    Welcome People
+  </h>
+ 
+<table style="width:100%">
+
+<br>
+<br>
+<tr>
+
+ <h class="h2" >
+     Robot Arm Control Panel
+  </h>
+  
+<br>
+
+</tr>
+  <tr>
+  <th class="h3">Engine 1 </th>
+    <th><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></th>
+   </tr> 
+    <tr>
+  <th class="h3">Engine 2 </th>
+    <th><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></th>
+   </tr> 
+    <tr>
+  <th class="h3">Engine 3 </th>
+    <th><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></th>
+   </tr> 
+    <tr>
+  <th class="h3">Engine 4 </th>
+    <th><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></th>
+   </tr> 
+    <tr>
+  <th class="h3">Engine 5 </th>
+    <th><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></th>
+   </tr> 
+    <tr>
+  <th class="h3">Engine 6 </th>
+    <th><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></th>
+   </tr> 
+    <tr>
+  <th>								  <th>
+    <th>							</th>
+   </tr> 
+   <tr>
+  <th>								  <th>
+    <th>							</th>
+   </tr> 
+   <tr>
+  <th><button  type="button" class="button">Save</button></th>
+  <th><button   type="button" class="button">Run</button></th>
+   </tr> 
+   
+   
+
+   </table>
+      <table style="width:100%">
+ <tr>
+ <br><br><br>
+ </tr>
+  <tr>
+ <h class="h2" >
+     Robot Base Control Panel<br><br>
+  </h>
+ </tr>
+  <tr  >
+<th >        </th>
+<th><button type="button" class="button">FORWARD	</button></th>
+  </tr>
+
+  <tr  >
+    <th>
+      <button type="button" class="button">LEFT	</button> 
+    </th>
+    <th>
+      <button type="button" class="button">STOP	</button> 
+    </th>
+    <th>
+      <button type="button" class="button">RIGHT	</button> 
+    </th>
+    
+  </tr>
+  <th>        </th>
+<th><button type="button" class="button">BACKWARD	</button></th>
+  </tr>
+  </tr>
+  
+  
+  
+  </table>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "d6250743-ac95-4662-a586-9f57ddafd536", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "a227de8f-5873-4af4-ad2f-228d98760887", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+      
+</body>
+</html>
